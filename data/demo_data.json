@@ -1,0 +1,4002 @@
+[
+  {
+    "id": 1,
+    "age": 75,
+    "income": 40385,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 2,
+    "age": 70,
+    "income": 23410,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 3,
+    "age": 71,
+    "income": 65755,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 4,
+    "age": 70,
+    "income": 54754,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 5,
+    "age": 22,
+    "income": 50998,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 6,
+    "age": 78,
+    "income": 64940,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 7,
+    "age": 25,
+    "income": 100471,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 8,
+    "age": 71,
+    "income": 112772,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 9,
+    "age": 58,
+    "income": 72018,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 10,
+    "age": 42,
+    "income": 84922,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 11,
+    "age": 77,
+    "income": 25803,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 12,
+    "age": 34,
+    "income": 64675,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 13,
+    "age": 80,
+    "income": 65858,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 14,
+    "age": 29,
+    "income": 62181,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 15,
+    "age": 34,
+    "income": 82686,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 16,
+    "age": 22,
+    "income": 100445,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 17,
+    "age": 71,
+    "income": 26042,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 18,
+    "age": 44,
+    "income": 93394,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 19,
+    "age": 20,
+    "income": 118029,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 20,
+    "age": 65,
+    "income": 129411,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 21,
+    "age": 28,
+    "income": 50821,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 22,
+    "age": 72,
+    "income": 140421,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 23,
+    "age": 49,
+    "income": 132322,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 24,
+    "age": 68,
+    "income": 101871,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 25,
+    "age": 22,
+    "income": 67690,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 26,
+    "age": 20,
+    "income": 116166,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 27,
+    "age": 38,
+    "income": 83742,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 28,
+    "age": 37,
+    "income": 59191,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 29,
+    "age": 69,
+    "income": 90114,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 30,
+    "age": 47,
+    "income": 133106,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 31,
+    "age": 65,
+    "income": 123230,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 32,
+    "age": 38,
+    "income": 74206,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 33,
+    "age": 52,
+    "income": 59200,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 34,
+    "age": 23,
+    "income": 29180,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 35,
+    "age": 47,
+    "income": 64403,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 36,
+    "age": 29,
+    "income": 118171,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 37,
+    "age": 66,
+    "income": 68107,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 38,
+    "age": 72,
+    "income": 46759,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 39,
+    "age": 79,
+    "income": 62744,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 40,
+    "age": 47,
+    "income": 71750,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 41,
+    "age": 60,
+    "income": 136354,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 42,
+    "age": 57,
+    "income": 58913,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 43,
+    "age": 58,
+    "income": 135827,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 44,
+    "age": 57,
+    "income": 62098,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 45,
+    "age": 79,
+    "income": 84040,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 46,
+    "age": 33,
+    "income": 65042,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 47,
+    "age": 18,
+    "income": 53434,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 48,
+    "age": 65,
+    "income": 119410,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 49,
+    "age": 62,
+    "income": 137589,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 50,
+    "age": 73,
+    "income": 62826,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 51,
+    "age": 28,
+    "income": 126890,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 52,
+    "age": 40,
+    "income": 124374,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 53,
+    "age": 35,
+    "income": 132689,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 54,
+    "age": 53,
+    "income": 134933,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 55,
+    "age": 47,
+    "income": 88137,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 56,
+    "age": 54,
+    "income": 35212,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 57,
+    "age": 57,
+    "income": 133756,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 58,
+    "age": 25,
+    "income": 67322,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 59,
+    "age": 27,
+    "income": 98201,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 60,
+    "age": 70,
+    "income": 126788,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 61,
+    "age": 62,
+    "income": 52627,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 62,
+    "age": 43,
+    "income": 36571,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 63,
+    "age": 58,
+    "income": 46199,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 64,
+    "age": 27,
+    "income": 66286,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 65,
+    "age": 47,
+    "income": 103812,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 66,
+    "age": 33,
+    "income": 132955,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 67,
+    "age": 33,
+    "income": 69361,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 68,
+    "age": 62,
+    "income": 80944,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 69,
+    "age": 64,
+    "income": 76855,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 70,
+    "age": 66,
+    "income": 100902,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 71,
+    "age": 19,
+    "income": 137921,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 72,
+    "age": 55,
+    "income": 123082,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 73,
+    "age": 71,
+    "income": 76031,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 74,
+    "age": 40,
+    "income": 109605,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 75,
+    "age": 29,
+    "income": 108341,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 76,
+    "age": 65,
+    "income": 132102,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 77,
+    "age": 30,
+    "income": 51953,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 78,
+    "age": 74,
+    "income": 84505,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 79,
+    "age": 52,
+    "income": 95838,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 80,
+    "age": 42,
+    "income": 35641,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 81,
+    "age": 72,
+    "income": 146025,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 82,
+    "age": 37,
+    "income": 69051,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 83,
+    "age": 55,
+    "income": 147225,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 84,
+    "age": 27,
+    "income": 64135,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 85,
+    "age": 78,
+    "income": 121709,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 86,
+    "age": 37,
+    "income": 105388,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 87,
+    "age": 71,
+    "income": 120682,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 88,
+    "age": 75,
+    "income": 54714,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 89,
+    "age": 74,
+    "income": 49324,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 90,
+    "age": 62,
+    "income": 136404,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 91,
+    "age": 69,
+    "income": 101130,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 92,
+    "age": 75,
+    "income": 115916,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 93,
+    "age": 23,
+    "income": 91935,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 94,
+    "age": 49,
+    "income": 61662,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 95,
+    "age": 29,
+    "income": 127935,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 96,
+    "age": 63,
+    "income": 134230,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 97,
+    "age": 20,
+    "income": 70240,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 98,
+    "age": 64,
+    "income": 32936,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 99,
+    "age": 76,
+    "income": 143294,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 100,
+    "age": 51,
+    "income": 91511,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 101,
+    "age": 33,
+    "income": 68344,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 102,
+    "age": 42,
+    "income": 55723,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 103,
+    "age": 79,
+    "income": 113358,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 104,
+    "age": 75,
+    "income": 142886,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 105,
+    "age": 23,
+    "income": 132331,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 106,
+    "age": 60,
+    "income": 143773,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 107,
+    "age": 42,
+    "income": 36843,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 108,
+    "age": 44,
+    "income": 119079,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 109,
+    "age": 44,
+    "income": 30032,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 110,
+    "age": 65,
+    "income": 76976,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 111,
+    "age": 55,
+    "income": 139635,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 112,
+    "age": 29,
+    "income": 79457,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 113,
+    "age": 79,
+    "income": 83559,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 114,
+    "age": 72,
+    "income": 117883,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 115,
+    "age": 29,
+    "income": 149572,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 116,
+    "age": 68,
+    "income": 114643,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 117,
+    "age": 39,
+    "income": 109577,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 118,
+    "age": 79,
+    "income": 26659,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 119,
+    "age": 25,
+    "income": 85154,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 120,
+    "age": 55,
+    "income": 138194,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 121,
+    "age": 51,
+    "income": 23366,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 122,
+    "age": 34,
+    "income": 33781,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 123,
+    "age": 70,
+    "income": 46291,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 124,
+    "age": 19,
+    "income": 57425,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 125,
+    "age": 22,
+    "income": 81656,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 126,
+    "age": 18,
+    "income": 110479,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 127,
+    "age": 42,
+    "income": 79507,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 128,
+    "age": 52,
+    "income": 134107,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 129,
+    "age": 76,
+    "income": 106721,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 130,
+    "age": 44,
+    "income": 125744,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 131,
+    "age": 52,
+    "income": 149411,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 132,
+    "age": 22,
+    "income": 88118,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 133,
+    "age": 36,
+    "income": 75289,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 134,
+    "age": 70,
+    "income": 67381,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 135,
+    "age": 67,
+    "income": 48256,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 136,
+    "age": 33,
+    "income": 105034,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 137,
+    "age": 56,
+    "income": 62634,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 138,
+    "age": 25,
+    "income": 28098,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 139,
+    "age": 38,
+    "income": 51812,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 140,
+    "age": 46,
+    "income": 88487,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 141,
+    "age": 52,
+    "income": 105702,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 142,
+    "age": 79,
+    "income": 107856,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 143,
+    "age": 67,
+    "income": 114165,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 144,
+    "age": 80,
+    "income": 34654,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 145,
+    "age": 73,
+    "income": 86979,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 146,
+    "age": 66,
+    "income": 20402,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 147,
+    "age": 25,
+    "income": 63709,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 148,
+    "age": 48,
+    "income": 91925,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 149,
+    "age": 35,
+    "income": 146197,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 150,
+    "age": 80,
+    "income": 92938,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 151,
+    "age": 29,
+    "income": 22223,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 152,
+    "age": 55,
+    "income": 122011,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 153,
+    "age": 76,
+    "income": 97870,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 154,
+    "age": 63,
+    "income": 113975,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 155,
+    "age": 80,
+    "income": 31012,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 156,
+    "age": 30,
+    "income": 134211,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 157,
+    "age": 51,
+    "income": 67004,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 158,
+    "age": 73,
+    "income": 137558,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 159,
+    "age": 34,
+    "income": 107704,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 160,
+    "age": 20,
+    "income": 34013,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 161,
+    "age": 43,
+    "income": 97451,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 162,
+    "age": 21,
+    "income": 132150,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 163,
+    "age": 22,
+    "income": 120931,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 164,
+    "age": 66,
+    "income": 98683,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 165,
+    "age": 66,
+    "income": 74396,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 166,
+    "age": 31,
+    "income": 112109,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 167,
+    "age": 64,
+    "income": 105271,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 168,
+    "age": 55,
+    "income": 106322,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 169,
+    "age": 73,
+    "income": 36613,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 170,
+    "age": 27,
+    "income": 46107,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 171,
+    "age": 48,
+    "income": 35980,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 172,
+    "age": 68,
+    "income": 145408,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 173,
+    "age": 46,
+    "income": 81065,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 174,
+    "age": 62,
+    "income": 97171,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 175,
+    "age": 70,
+    "income": 148730,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 176,
+    "age": 42,
+    "income": 66999,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 177,
+    "age": 21,
+    "income": 84530,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 178,
+    "age": 34,
+    "income": 123527,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 179,
+    "age": 71,
+    "income": 127573,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 180,
+    "age": 64,
+    "income": 80479,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 181,
+    "age": 30,
+    "income": 21681,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 182,
+    "age": 34,
+    "income": 72601,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 183,
+    "age": 52,
+    "income": 144403,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 184,
+    "age": 74,
+    "income": 149489,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 185,
+    "age": 54,
+    "income": 73396,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 186,
+    "age": 56,
+    "income": 98668,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 187,
+    "age": 25,
+    "income": 86072,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 188,
+    "age": 80,
+    "income": 109343,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 189,
+    "age": 80,
+    "income": 24077,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 190,
+    "age": 70,
+    "income": 81889,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 191,
+    "age": 59,
+    "income": 64233,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 192,
+    "age": 23,
+    "income": 35716,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 193,
+    "age": 45,
+    "income": 91071,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 194,
+    "age": 49,
+    "income": 38571,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 195,
+    "age": 22,
+    "income": 64002,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 196,
+    "age": 55,
+    "income": 53154,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 197,
+    "age": 46,
+    "income": 130061,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 198,
+    "age": 52,
+    "income": 47882,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 199,
+    "age": 73,
+    "income": 75946,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 200,
+    "age": 57,
+    "income": 61405,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 201,
+    "age": 33,
+    "income": 49689,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 202,
+    "age": 56,
+    "income": 85881,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 203,
+    "age": 63,
+    "income": 116530,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 204,
+    "age": 80,
+    "income": 47298,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 205,
+    "age": 33,
+    "income": 26958,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 206,
+    "age": 20,
+    "income": 107166,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 207,
+    "age": 64,
+    "income": 35238,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 208,
+    "age": 25,
+    "income": 121863,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 209,
+    "age": 69,
+    "income": 82474,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 210,
+    "age": 67,
+    "income": 111548,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 211,
+    "age": 63,
+    "income": 142221,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 212,
+    "age": 79,
+    "income": 94243,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 213,
+    "age": 55,
+    "income": 81855,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 214,
+    "age": 69,
+    "income": 121648,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 215,
+    "age": 75,
+    "income": 123173,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 216,
+    "age": 50,
+    "income": 63771,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 217,
+    "age": 75,
+    "income": 103833,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 218,
+    "age": 55,
+    "income": 92790,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 219,
+    "age": 79,
+    "income": 75745,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 220,
+    "age": 54,
+    "income": 89342,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 221,
+    "age": 36,
+    "income": 34661,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 222,
+    "age": 23,
+    "income": 53129,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 223,
+    "age": 68,
+    "income": 25735,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 224,
+    "age": 47,
+    "income": 133469,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 225,
+    "age": 65,
+    "income": 75076,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 226,
+    "age": 76,
+    "income": 40473,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 227,
+    "age": 28,
+    "income": 38518,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 228,
+    "age": 32,
+    "income": 136580,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 229,
+    "age": 63,
+    "income": 68016,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 230,
+    "age": 52,
+    "income": 52577,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 231,
+    "age": 78,
+    "income": 25076,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 232,
+    "age": 70,
+    "income": 120160,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 233,
+    "age": 21,
+    "income": 37453,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 234,
+    "age": 38,
+    "income": 97194,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 235,
+    "age": 49,
+    "income": 28656,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 236,
+    "age": 28,
+    "income": 105185,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 237,
+    "age": 30,
+    "income": 130883,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 238,
+    "age": 75,
+    "income": 128754,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 239,
+    "age": 43,
+    "income": 146218,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 240,
+    "age": 24,
+    "income": 91120,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 241,
+    "age": 45,
+    "income": 37134,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 242,
+    "age": 35,
+    "income": 91918,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 243,
+    "age": 38,
+    "income": 70340,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 244,
+    "age": 74,
+    "income": 103919,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 245,
+    "age": 35,
+    "income": 52047,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 246,
+    "age": 41,
+    "income": 50503,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 247,
+    "age": 22,
+    "income": 113092,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 248,
+    "age": 49,
+    "income": 75702,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 249,
+    "age": 75,
+    "income": 63502,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 250,
+    "age": 32,
+    "income": 116529,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 251,
+    "age": 50,
+    "income": 22066,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 252,
+    "age": 31,
+    "income": 66554,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 253,
+    "age": 47,
+    "income": 21025,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 254,
+    "age": 69,
+    "income": 125421,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 255,
+    "age": 71,
+    "income": 101327,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 256,
+    "age": 62,
+    "income": 51362,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 257,
+    "age": 63,
+    "income": 109835,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 258,
+    "age": 40,
+    "income": 71400,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 259,
+    "age": 79,
+    "income": 138892,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 260,
+    "age": 54,
+    "income": 102004,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 261,
+    "age": 18,
+    "income": 23222,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 262,
+    "age": 41,
+    "income": 70862,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 263,
+    "age": 22,
+    "income": 35905,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 264,
+    "age": 58,
+    "income": 38069,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 265,
+    "age": 34,
+    "income": 40204,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 266,
+    "age": 36,
+    "income": 89554,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 267,
+    "age": 57,
+    "income": 141747,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 268,
+    "age": 45,
+    "income": 34602,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 269,
+    "age": 72,
+    "income": 87750,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 270,
+    "age": 61,
+    "income": 121391,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 271,
+    "age": 57,
+    "income": 112601,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 272,
+    "age": 54,
+    "income": 26002,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 273,
+    "age": 49,
+    "income": 80063,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 274,
+    "age": 32,
+    "income": 126613,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 275,
+    "age": 39,
+    "income": 129820,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 276,
+    "age": 62,
+    "income": 94563,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 277,
+    "age": 49,
+    "income": 40202,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 278,
+    "age": 37,
+    "income": 135959,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 279,
+    "age": 65,
+    "income": 127467,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 280,
+    "age": 30,
+    "income": 125732,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 281,
+    "age": 46,
+    "income": 24289,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 282,
+    "age": 44,
+    "income": 37188,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 283,
+    "age": 56,
+    "income": 75822,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 284,
+    "age": 67,
+    "income": 129247,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 285,
+    "age": 63,
+    "income": 148931,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 286,
+    "age": 73,
+    "income": 89363,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 287,
+    "age": 35,
+    "income": 37120,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 288,
+    "age": 29,
+    "income": 134423,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 289,
+    "age": 43,
+    "income": 103786,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 290,
+    "age": 76,
+    "income": 61050,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 291,
+    "age": 24,
+    "income": 115501,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 292,
+    "age": 55,
+    "income": 20115,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 293,
+    "age": 48,
+    "income": 140577,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 294,
+    "age": 26,
+    "income": 88196,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 295,
+    "age": 57,
+    "income": 21871,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 296,
+    "age": 75,
+    "income": 105072,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 297,
+    "age": 27,
+    "income": 140490,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 298,
+    "age": 56,
+    "income": 113909,
+    "education": 10,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 299,
+    "age": 78,
+    "income": 97580,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 300,
+    "age": 78,
+    "income": 89511,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 301,
+    "age": 37,
+    "income": 49605,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 302,
+    "age": 33,
+    "income": 82740,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 303,
+    "age": 18,
+    "income": 57348,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 304,
+    "age": 38,
+    "income": 104184,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 305,
+    "age": 73,
+    "income": 70513,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 306,
+    "age": 73,
+    "income": 148045,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 307,
+    "age": 77,
+    "income": 130763,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 308,
+    "age": 63,
+    "income": 28499,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 309,
+    "age": 67,
+    "income": 47903,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 310,
+    "age": 46,
+    "income": 72561,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 311,
+    "age": 41,
+    "income": 93930,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 312,
+    "age": 47,
+    "income": 39614,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 313,
+    "age": 72,
+    "income": 144257,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 314,
+    "age": 54,
+    "income": 119347,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 315,
+    "age": 34,
+    "income": 39250,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 316,
+    "age": 41,
+    "income": 133473,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 317,
+    "age": 21,
+    "income": 123997,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 318,
+    "age": 46,
+    "income": 129367,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 319,
+    "age": 22,
+    "income": 93133,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 320,
+    "age": 23,
+    "income": 84567,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 321,
+    "age": 19,
+    "income": 108329,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 322,
+    "age": 70,
+    "income": 62934,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 323,
+    "age": 59,
+    "income": 64314,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 324,
+    "age": 24,
+    "income": 81537,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 325,
+    "age": 45,
+    "income": 82490,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 326,
+    "age": 32,
+    "income": 51101,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 327,
+    "age": 75,
+    "income": 37109,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 328,
+    "age": 30,
+    "income": 144896,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 329,
+    "age": 31,
+    "income": 78215,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 330,
+    "age": 59,
+    "income": 44540,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 331,
+    "age": 30,
+    "income": 45136,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 332,
+    "age": 65,
+    "income": 33228,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 333,
+    "age": 28,
+    "income": 103802,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 334,
+    "age": 40,
+    "income": 121171,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 335,
+    "age": 65,
+    "income": 115973,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 336,
+    "age": 19,
+    "income": 37796,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 337,
+    "age": 64,
+    "income": 126883,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 338,
+    "age": 38,
+    "income": 143014,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 339,
+    "age": 48,
+    "income": 129313,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 340,
+    "age": 50,
+    "income": 94259,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 341,
+    "age": 37,
+    "income": 97118,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 342,
+    "age": 37,
+    "income": 39843,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 343,
+    "age": 47,
+    "income": 75430,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 344,
+    "age": 59,
+    "income": 79842,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 345,
+    "age": 69,
+    "income": 141985,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 346,
+    "age": 71,
+    "income": 109587,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 347,
+    "age": 76,
+    "income": 130368,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 348,
+    "age": 62,
+    "income": 21131,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 349,
+    "age": 18,
+    "income": 44633,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 350,
+    "age": 60,
+    "income": 44672,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 351,
+    "age": 62,
+    "income": 94028,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 352,
+    "age": 75,
+    "income": 129505,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 353,
+    "age": 34,
+    "income": 81320,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 354,
+    "age": 74,
+    "income": 114781,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 355,
+    "age": 18,
+    "income": 122619,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 356,
+    "age": 64,
+    "income": 99568,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 357,
+    "age": 18,
+    "income": 94054,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 358,
+    "age": 77,
+    "income": 36372,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 359,
+    "age": 25,
+    "income": 94978,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 360,
+    "age": 53,
+    "income": 26354,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 361,
+    "age": 54,
+    "income": 106165,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 362,
+    "age": 37,
+    "income": 76802,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 363,
+    "age": 73,
+    "income": 115694,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 364,
+    "age": 21,
+    "income": 25371,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 365,
+    "age": 64,
+    "income": 96389,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 366,
+    "age": 30,
+    "income": 86880,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 367,
+    "age": 47,
+    "income": 32245,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 368,
+    "age": 20,
+    "income": 47691,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 369,
+    "age": 31,
+    "income": 46851,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 370,
+    "age": 50,
+    "income": 114188,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 371,
+    "age": 52,
+    "income": 65147,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 372,
+    "age": 29,
+    "income": 67256,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 373,
+    "age": 57,
+    "income": 145933,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 374,
+    "age": 74,
+    "income": 32646,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 375,
+    "age": 40,
+    "income": 73320,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 376,
+    "age": 77,
+    "income": 24550,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 377,
+    "age": 33,
+    "income": 108120,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 378,
+    "age": 52,
+    "income": 79810,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 379,
+    "age": 32,
+    "income": 87823,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 380,
+    "age": 30,
+    "income": 97520,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 381,
+    "age": 38,
+    "income": 105677,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 382,
+    "age": 74,
+    "income": 74172,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 383,
+    "age": 67,
+    "income": 128921,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 384,
+    "age": 19,
+    "income": 146731,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 385,
+    "age": 66,
+    "income": 111874,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 386,
+    "age": 36,
+    "income": 24872,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 387,
+    "age": 20,
+    "income": 126375,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 388,
+    "age": 71,
+    "income": 56595,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 389,
+    "age": 51,
+    "income": 64665,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 390,
+    "age": 46,
+    "income": 40429,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 391,
+    "age": 36,
+    "income": 124299,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 392,
+    "age": 45,
+    "income": 37194,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 393,
+    "age": 56,
+    "income": 84426,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 394,
+    "age": 51,
+    "income": 97855,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 395,
+    "age": 62,
+    "income": 94704,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 396,
+    "age": 74,
+    "income": 63267,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 397,
+    "age": 77,
+    "income": 87365,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 398,
+    "age": 74,
+    "income": 36708,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 399,
+    "age": 54,
+    "income": 29863,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 400,
+    "age": 49,
+    "income": 61820,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 401,
+    "age": 55,
+    "income": 117187,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 402,
+    "age": 63,
+    "income": 82657,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 403,
+    "age": 50,
+    "income": 115052,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 404,
+    "age": 80,
+    "income": 116022,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 405,
+    "age": 47,
+    "income": 58059,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 406,
+    "age": 51,
+    "income": 25710,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 407,
+    "age": 24,
+    "income": 134674,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 408,
+    "age": 27,
+    "income": 142198,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 409,
+    "age": 69,
+    "income": 101870,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 410,
+    "age": 19,
+    "income": 49537,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 411,
+    "age": 61,
+    "income": 75562,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 412,
+    "age": 28,
+    "income": 82643,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 413,
+    "age": 58,
+    "income": 60253,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 414,
+    "age": 78,
+    "income": 95360,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 415,
+    "age": 35,
+    "income": 138624,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 416,
+    "age": 33,
+    "income": 37055,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 417,
+    "age": 70,
+    "income": 65946,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 418,
+    "age": 26,
+    "income": 49486,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 419,
+    "age": 42,
+    "income": 101119,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 420,
+    "age": 55,
+    "income": 32152,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 421,
+    "age": 80,
+    "income": 75757,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 422,
+    "age": 67,
+    "income": 140775,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 423,
+    "age": 72,
+    "income": 149145,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 424,
+    "age": 48,
+    "income": 115432,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 425,
+    "age": 32,
+    "income": 28792,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 426,
+    "age": 38,
+    "income": 135050,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 427,
+    "age": 79,
+    "income": 127481,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 428,
+    "age": 47,
+    "income": 140475,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 429,
+    "age": 20,
+    "income": 61556,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 430,
+    "age": 23,
+    "income": 48278,
+    "education": 20,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 431,
+    "age": 48,
+    "income": 116352,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 432,
+    "age": 64,
+    "income": 56575,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 433,
+    "age": 40,
+    "income": 123955,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 434,
+    "age": 61,
+    "income": 37194,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 435,
+    "age": 59,
+    "income": 77339,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 436,
+    "age": 36,
+    "income": 85157,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 437,
+    "age": 72,
+    "income": 70684,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 438,
+    "age": 44,
+    "income": 144653,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 439,
+    "age": 74,
+    "income": 73785,
+    "education": 13,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 440,
+    "age": 60,
+    "income": 85178,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 441,
+    "age": 25,
+    "income": 45999,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 442,
+    "age": 61,
+    "income": 147825,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 443,
+    "age": 54,
+    "income": 133786,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 444,
+    "age": 74,
+    "income": 74849,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 445,
+    "age": 37,
+    "income": 123893,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 446,
+    "age": 74,
+    "income": 104700,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 447,
+    "age": 58,
+    "income": 127291,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 448,
+    "age": 70,
+    "income": 148749,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 449,
+    "age": 27,
+    "income": 111240,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 450,
+    "age": 47,
+    "income": 124294,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 451,
+    "age": 54,
+    "income": 125012,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 452,
+    "age": 80,
+    "income": 36883,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 453,
+    "age": 62,
+    "income": 130482,
+    "education": 11,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 454,
+    "age": 50,
+    "income": 112545,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 455,
+    "age": 66,
+    "income": 68673,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 456,
+    "age": 57,
+    "income": 52209,
+    "education": 18,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 457,
+    "age": 57,
+    "income": 22775,
+    "education": 14,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 458,
+    "age": 22,
+    "income": 129581,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 459,
+    "age": 63,
+    "income": 40815,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 460,
+    "age": 32,
+    "income": 138515,
+    "education": 22,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 461,
+    "age": 64,
+    "income": 145821,
+    "education": 8,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 462,
+    "age": 26,
+    "income": 53398,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 463,
+    "age": 69,
+    "income": 25622,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 464,
+    "age": 18,
+    "income": 147871,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 465,
+    "age": 30,
+    "income": 135274,
+    "education": 15,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 466,
+    "age": 32,
+    "income": 77781,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 467,
+    "age": 31,
+    "income": 27265,
+    "education": 16,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 468,
+    "age": 66,
+    "income": 100792,
+    "education": 8,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 469,
+    "age": 49,
+    "income": 105808,
+    "education": 22,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 470,
+    "age": 34,
+    "income": 46840,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 471,
+    "age": 22,
+    "income": 86622,
+    "education": 12,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 472,
+    "age": 36,
+    "income": 57240,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 473,
+    "age": 22,
+    "income": 73607,
+    "education": 10,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 474,
+    "age": 44,
+    "income": 78855,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 475,
+    "age": 61,
+    "income": 53235,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 476,
+    "age": 42,
+    "income": 139295,
+    "education": 19,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 477,
+    "age": 51,
+    "income": 102275,
+    "education": 18,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 478,
+    "age": 49,
+    "income": 94379,
+    "education": 14,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 479,
+    "age": 53,
+    "income": 125851,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 480,
+    "age": 61,
+    "income": 135855,
+    "education": 20,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 481,
+    "age": 43,
+    "income": 54626,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 482,
+    "age": 76,
+    "income": 117090,
+    "education": 17,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 483,
+    "age": 68,
+    "income": 59136,
+    "education": 12,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 484,
+    "age": 37,
+    "income": 37446,
+    "education": 11,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 485,
+    "age": 61,
+    "income": 64360,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 486,
+    "age": 22,
+    "income": 139465,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 487,
+    "age": 34,
+    "income": 127032,
+    "education": 21,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 488,
+    "age": 70,
+    "income": 58923,
+    "education": 17,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 489,
+    "age": 79,
+    "income": 68456,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 490,
+    "age": 36,
+    "income": 99681,
+    "education": 19,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 491,
+    "age": 48,
+    "income": 52484,
+    "education": 16,
+    "protected_attribute": 0,
+    "loan_approved": 0
+  },
+  {
+    "id": 492,
+    "age": 73,
+    "income": 105143,
+    "education": 15,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 493,
+    "age": 26,
+    "income": 125644,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 494,
+    "age": 34,
+    "income": 120772,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 495,
+    "age": 22,
+    "income": 53016,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 496,
+    "age": 26,
+    "income": 47825,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 497,
+    "age": 28,
+    "income": 117001,
+    "education": 13,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  },
+  {
+    "id": 498,
+    "age": 35,
+    "income": 50933,
+    "education": 9,
+    "protected_attribute": 1,
+    "loan_approved": 0
+  },
+  {
+    "id": 499,
+    "age": 71,
+    "income": 59795,
+    "education": 9,
+    "protected_attribute": 0,
+    "loan_approved": 1
+  },
+  {
+    "id": 500,
+    "age": 65,
+    "income": 136161,
+    "education": 21,
+    "protected_attribute": 1,
+    "loan_approved": 1
+  }
+]

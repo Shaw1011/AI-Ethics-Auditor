@@ -1,0 +1,22 @@
+{
+  "name": "demo_model",
+  "type": "decision_rules",
+  "rules": [
+    {
+      "feature": "income",
+      "threshold": 50000,
+      "weight": 0.5
+    },
+    {
+      "feature": "age",
+      "threshold": 25,
+      "weight": 0.2
+    },
+    {
+      "feature": "education",
+      "threshold": 16,
+      "weight": 0.3
+    }
+  ],
+  "created_at": "2025-04-15T21:10:43.553232"
+}

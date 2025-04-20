@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Model Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="audits.html">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="models.html">Models</a> / <span>Model Details</span>
+        </div>
+        
+        <div id="model-details">
+            <p>Loading model details...</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Model Audits</div>
+            <div class="card-body">
+                <div id="model-audits">
+                    <p>Loading audits for this model...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Ethics Considerations</div>
+            <div class="card-body">
+                <p>When using AI models in production, it's essential to consider the following ethical dimensions:</p>
+                
+                <div class="ethics-consideration">
+                    <h4>Fairness and Bias</h4>
+                    <p>Ensure your model treats all demographics and protected groups equitably. Models can inadvertently perpetuate or even amplify existing social biases if not carefully monitored.</p>
+                </div>
+                
+                <div class="ethics-consideration">
+                    <h4>Transparency and Explainability</h4>
+                    <p>Users and stakeholders should be able to understand how decisions are being made. Complex black-box models may require additional explanation mechanisms.</p>
+                </div>
+                
+                <div class="ethics-consideration">
+                    <h4>Robustness and Safety</h4>
+                    <p>Models should perform reliably even in edge cases and under adversarial conditions. Fragile models can make unexpected decisions when facing unusual inputs.</p>
+                </div>
+                
+                <div class="ethics-consideration">
+                    <h4>Privacy</h4>
+                    <p>Consider what data is being processed and how user privacy is protected, especially when handling sensitive personal information.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="models.html" class="btn">Back to Models</a>
+            <a href="create-audit.html" id="create-audit-link" class="btn btn-success">Create New Audit</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Update the Create Audit link with the model ID from the URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const modelId = new URLSearchParams(window.location.search).get('id');
+            if (modelId) {
+                const createAuditLink = document.getElementById('create-audit-link');
+                createAuditLink.href = `create-audit.html?model_id=${modelId}`;
+            }
+        });
+    </script>
+</body>
+</html> 

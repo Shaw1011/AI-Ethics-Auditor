@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Dashboard</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="audits.html">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Dashboard</h1>
+        
+        <div class="dashboard-grid">
+            <div class="metric-card">
+                <div class="metric-title">Models</div>
+                <div class="metric-value" id="models-count">-</div>
+                <div class="metric-description">Total models registered in the system</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Audits</div>
+                <div class="metric-value" id="audits-count">-</div>
+                <div class="metric-description">Total audits performed</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-title">Completed Audits</div>
+                <div class="metric-value" id="completed-audits-count">-</div>
+                <div class="metric-description">Successfully completed audits</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Recent Audits</div>
+            <div class="card-body">
+                <div id="recent-audits">
+                    <p>Loading recent audits...</p>
+                </div>
+                <a href="audits.html" class="btn">View All Audits</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Quick Actions</div>
+            <div class="card-body">
+                <p>Start enhancing the ethical aspects of your AI models with our comprehensive audit tools.</p>
+                <div class="actions-grid">
+                    <a href="models.html" class="btn">View Models</a>
+                    <a href="create-audit.html" class="btn btn-success">Create New Audit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

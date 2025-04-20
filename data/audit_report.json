@@ -1,0 +1,48 @@
+{
+  "model_name": "demo_model",
+  "audit_date": "2025-04-15T21:10:43.554566",
+  "results": [
+    {
+      "name": "Statistical Parity",
+      "category": "fairness",
+      "value": 0.0077631052420968905,
+      "details": {
+        "description": "Difference in approval rates between groups",
+        "interpretation": "Closer to 0 is better",
+        "group_0_approval": 0.8901960784313725,
+        "group_1_approval": 0.8979591836734694
+      }
+    },
+    {
+      "name": "Disparate Impact",
+      "category": "fairness",
+      "value": 0.9913547237076649,
+      "details": {
+        "description": "Ratio of approval rates between groups",
+        "interpretation": "Closer to 1 is better"
+      }
+    },
+    {
+      "name": "Feature Importance",
+      "category": "explainability",
+      "value": 0.5,
+      "details": {
+        "description": "Importance of each feature in the model",
+        "feature_importance": {
+          "income": 0.5,
+          "age": 0.2,
+          "education": 0.3
+        }
+      }
+    },
+    {
+      "name": "Model Simplicity",
+      "category": "explainability",
+      "value": 3,
+      "details": {
+        "description": "Number of rules in the model",
+        "interpretation": "Lower is more explainable"
+      }
+    }
+  ]
+}

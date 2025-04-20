@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Models</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="models.html" class="active">Models</a></li>
+                    <li><a href="audits.html">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>AI Models</h1>
+        
+        <div class="card">
+            <div class="card-header">Registered Models</div>
+            <div class="card-body">
+                <div id="models-list">
+                    <p>Loading models...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Register New Model</div>
+            <div class="card-body">
+                <form id="model-upload-form">
+                    <div class="form-group">
+                        <label for="model-name">Model Name *</label>
+                        <input type="text" id="model-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="model-description">Description</label>
+                        <textarea id="model-description" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="model-type">Model Type *</label>
+                        <select id="model-type" class="form-control" required>
+                            <option value="classification">Classification</option>
+                            <option value="regression">Regression</option>
+                            <option value="clustering">Clustering</option>
+                            <option value="nlp">Natural Language Processing</option>
+                            <option value="computer_vision">Computer Vision</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="model-version">Version</label>
+                        <input type="text" id="model-version" class="form-control" placeholder="1.0">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">Register Model</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

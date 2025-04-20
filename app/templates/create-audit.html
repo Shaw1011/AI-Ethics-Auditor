@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Create Audit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="audits.html">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn active">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Create New Ethics Audit</h1>
+        
+        <div class="card">
+            <div class="card-header">Audit Details</div>
+            <div class="card-body" id="create-audit-form-container">
+                <form id="create-audit-form">
+                    <div class="form-group">
+                        <label for="audit-name">Audit Name *</label>
+                        <input type="text" id="audit-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="audit-description">Description</label>
+                        <textarea id="audit-description" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="audit-model">Select Model *</label>
+                        <select id="audit-model" class="form-control" required>
+                            <option value="" disabled selected>-- Select a model --</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">Start Audit</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">What Happens During an Audit?</div>
+            <div class="card-body">
+                <p>When you start an audit, our system performs a comprehensive analysis of your AI model across three key dimensions:</p>
+                
+                <h3>Fairness Assessment</h3>
+                <p>We evaluate how your model performs across different demographic groups, checking for disparate impact, statistical parity, and equalized odds to identify potential biases.</p>
+                
+                <h3>Explainability Analysis</h3>
+                <p>We measure how interpretable your model's decisions are by analyzing feature importance, decision boundaries, and providing explanations for individual predictions.</p>
+                
+                <h3>Robustness Testing</h3>
+                <p>We test your model's stability under various conditions, including adversarial inputs and data perturbations, to ensure reliable performance.</p>
+                
+                <p><strong>The audit process typically takes a few minutes to complete, depending on model complexity.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

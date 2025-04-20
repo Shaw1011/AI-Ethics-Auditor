@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Audit Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="audits.html">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="audits.html">Audits</a> / <span>Audit Details</span>
+        </div>
+        
+        <div id="audit-details">
+            <p>Loading audit details...</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Ethics Metrics</div>
+            <div class="card-body">
+                <div id="audit-metrics">
+                    <p>Loading metrics...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Recommendations</div>
+            <div class="card-body">
+                <h3>Based on the audit results, consider the following actions:</h3>
+                
+                <div class="recommendation">
+                    <h4>Fairness Improvements</h4>
+                    <ul>
+                        <li>Review training data for potential biases in protected attributes</li>
+                        <li>Apply fairness constraints during model training</li>
+                        <li>Consider post-processing techniques to equalize outcomes</li>
+                    </ul>
+                </div>
+                
+                <div class="recommendation">
+                    <h4>Explainability Enhancements</h4>
+                    <ul>
+                        <li>Use more interpretable model architectures when possible</li>
+                        <li>Implement feature importance visualization in your application</li>
+                        <li>Document decision boundaries and expected model behavior</li>
+                    </ul>
+                </div>
+                
+                <div class="recommendation">
+                    <h4>Robustness Strengthening</h4>
+                    <ul>
+                        <li>Augment training data with perturbations</li>
+                        <li>Implement adversarial training techniques</li>
+                        <li>Add input validation and sanitization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="audits.html" class="btn">Back to Audits</a>
+            <a href="create-audit.html" class="btn btn-success">Create New Audit</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 

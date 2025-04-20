@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Auditor - Audits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">AI Ethics Auditor</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="audits.html" class="active">Audits</a></li>
+                    <li><a href="create-audit.html" class="btn">New Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Ethics Audits</h1>
+        
+        <div class="actions">
+            <a href="create-audit.html" class="btn btn-success">Create New Audit</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">All Audits</div>
+            <div class="card-body">
+                <div id="audits-list">
+                    <p>Loading audits...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">What are Ethics Audits?</div>
+            <div class="card-body">
+                <p>AI Ethics Audits are comprehensive evaluations of machine learning models to assess their fairness, explainability, and robustness. These audits help identify potential biases and ethical concerns in AI systems.</p>
+                
+                <h3>Metrics We Analyze:</h3>
+                <ul>
+                    <li><strong>Fairness:</strong> Measures how equitably the model treats different demographic groups</li>
+                    <li><strong>Explainability:</strong> Evaluates how well model decisions can be understood by humans</li>
+                    <li><strong>Robustness:</strong> Tests how reliable the model is under various conditions and inputs</li>
+                </ul>
+                
+                <p>Start by <a href="create-audit.html">creating a new audit</a> for one of your AI models.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AI Ethics Auditor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
