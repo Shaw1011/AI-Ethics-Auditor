@@ -1,0 +1,92 @@
+﻿{% extends "base.html" %}
+{% block title %}Audits — AI Ethics Auditor{% endblock %}
+{% block content %}
+<div class="container-fluid py-4 px-4">
+  <div class="d-flex align-items-center mb-4">
+    <div><h2 class="fw-bold mb-0">Audits</h2><p class="text-muted mb-0">Ethics audit history</p></div>
+    <button class="btn btn-info btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#createAuditModal">
+      <i class="fas fa-plus me-1"></i>New Audit
+    </button>
+  </div>
+
+  <div class="card border-0 shadow-sm">
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr><th>Name</th><th>Model</th><th>Status</th><th>Metrics</th><th>Created</th><th></th></tr>
+          </thead>
+          <tbody id="audits-tbody"><tr><td colspan="6" class="text-center py-4 text-muted">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="createAuditModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Create Audit</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <div class="mb-3"><label class="form-label">Audit Name</label><input type="text" class="form-control" id="a-name" placeholder="e.g. Q4 Fairness Review"/></div>
+        <div class="mb-3"><label class="form-label">Description</label><textarea class="form-control" id="a-desc" rows="2"></textarea></div>
+        <div class="mb-3"><label class="form-label">Model</label>
+          <select class="form-select" id="a-model-id"><option value="">Select a model...</option></select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-info btn-sm" onclick="createAudit()">Create &amp; Run</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+function statusBadge(s) {
+  return {completed:'bg-success',running:'bg-info text-dark',failed:'bg-danger',pending:'bg-secondary'}[s]||'bg-secondary';
+}
+async function loadAudits() {
+  const res = await fetch('/api/audits/');
+  const audits = await res.json();
+  const tbody = document.getElementById('audits-tbody');
+  if (audits.length === 0) { tbody.innerHTML = '<tr><td colspan="6" class="text-center py-4 text-muted">No audits yet. Create one!</td></tr>'; return; }
+  tbody.innerHTML = audits.map(a => `<tr>
+    <td class="fw-semibold">${a.name}</td>
+    <td class="text-muted">${a.model_name||'—'}</td>
+    <td><span class="badge ${statusBadge(a.status)}">${a.status}</span></td>
+    <td>${a.metric_count||0}</td>
+    <td class="text-muted small">${new Date(a.created_at).toLocaleDateString()}</td>
+    <td><a href="/audits/${a.id}" class="btn btn-sm btn-outline-secondary py-0">View</a></td>
+  </tr>`).join('');
+}
+
+async function loadModelOptions() {
+  const res = await fetch('/api/models/');
+  const models = await res.json();
+  const sel = document.getElementById('a-model-id');
+  models.forEach(m => { const o = document.createElement('option'); o.value = m.id; o.textContent = `${m.name} (v${m.version})`; sel.appendChild(o); });
+  // Pre-select if model_id in URL
+  const params = new URLSearchParams(location.search);
+  if (params.get('model_id')) sel.value = params.get('model_id');
+}
+
+async function createAudit() {
+  const token = localStorage.getItem('token');
+  if (!token) { alert('Please login first'); return; }
+  const body = { name: document.getElementById('a-name').value, description: document.getElementById('a-desc').value, model_id: parseInt(document.getElementById('a-model-id').value) };
+  if (!body.name || !body.model_id) { alert('Name and model are required'); return; }
+  const res = await fetch('/api/audits/', { method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${token}`}, body: JSON.stringify(body) });
+  if (!res.ok) { const e = await res.json(); alert(e.error); return; }
+  const audit = await res.json();
+  bootstrap.Modal.getInstance(document.getElementById('createAuditModal')).hide();
+  // Auto-run
+  await fetch(`/api/audits/${audit.id}/run`, { method:'POST', headers:{'Authorization':`Bearer ${token}`} });
+  loadAudits();
+}
+
+loadModelOptions();
+loadAudits();
+</script>
+{% endblock %}

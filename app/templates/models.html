@@ -1,0 +1,83 @@
+﻿{% extends "base.html" %}
+{% block title %}Models — AI Ethics Auditor{% endblock %}
+{% block content %}
+<div class="container-fluid py-4 px-4">
+  <div class="d-flex align-items-center mb-4">
+    <div><h2 class="fw-bold mb-0">Models</h2><p class="text-muted mb-0">Registered AI models</p></div>
+    <button class="btn btn-info btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#addModelModal">
+      <i class="fas fa-plus me-1"></i>Register Model
+    </button>
+  </div>
+  <div class="row g-3" id="models-grid">
+    <div class="col-12 text-center text-muted py-5"><i class="fas fa-spinner fa-spin fa-2x"></i></div>
+  </div>
+</div>
+
+<div class="modal fade" id="addModelModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Register Model</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <div class="mb-3"><label class="form-label">Name</label><input type="text" class="form-control" id="m-name" placeholder="My Classifier v2"/></div>
+        <div class="mb-3"><label class="form-label">Description</label><textarea class="form-control" id="m-desc" rows="2"></textarea></div>
+        <div class="row">
+          <div class="col"><label class="form-label">Type</label>
+            <select class="form-select" id="m-type">
+              <option>classification</option><option>regression</option><option>nlp</option><option>vision</option>
+            </select>
+          </div>
+          <div class="col"><label class="form-label">Version</label><input type="text" class="form-control" id="m-version" value="1.0"/></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-info btn-sm" onclick="registerModel()">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+async function loadModels() {
+  const res = await fetch('/api/models/');
+  const models = await res.json();
+  const grid = document.getElementById('models-grid');
+  if (models.length === 0) {
+    grid.innerHTML = '<div class="col-12 text-center text-muted py-5"><i class="fas fa-brain fa-3x mb-3 d-block opacity-25"></i>No models registered yet</div>';
+    return;
+  }
+  grid.innerHTML = models.map(m => `
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-start mb-2">
+            <div class="flex-grow-1">
+              <h6 class="fw-bold mb-1">${m.name}</h6>
+              <span class="badge bg-info bg-opacity-15 text-info">${m.model_type}</span>
+              <span class="badge bg-secondary ms-1">v${m.version}</span>
+            </div>
+          </div>
+          <p class="text-muted small mb-3">${m.description || 'No description'}</p>
+          <div class="text-muted small">Created ${new Date(m.created_at).toLocaleDateString()}</div>
+        </div>
+        <div class="card-footer bg-transparent border-0 pt-0">
+          <a href="/audits?model_id=${m.id}" class="btn btn-sm btn-outline-info">
+            <i class="fas fa-clipboard-check me-1"></i>Audit
+          </a>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+async function registerModel() {
+  const token = localStorage.getItem('token');
+  if (!token) { alert('Please login first'); return; }
+  const body = { name: document.getElementById('m-name').value, description: document.getElementById('m-desc').value, model_type: document.getElementById('m-type').value, version: document.getElementById('m-version').value };
+  const res = await fetch('/api/models/', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }, body: JSON.stringify(body) });
+  if (res.ok) { bootstrap.Modal.getInstance(document.getElementById('addModelModal')).hide(); loadModels(); }
+  else { const e = await res.json(); alert(e.error); }
+}
+loadModels();
+</script>
+{% endblock %}

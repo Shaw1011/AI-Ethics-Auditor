@@ -1,0 +1,167 @@
+﻿{% extends "base.html" %}
+{% block title %}Audit Detail — AI Ethics Auditor{% endblock %}
+{% block content %}
+<div class="container-fluid py-4 px-4">
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+      <li class="breadcrumb-item"><a href="/audits">Audits</a></li>
+      <li class="breadcrumb-item active" id="breadcrumb-name">Loading...</li>
+    </ol>
+  </nav>
+
+  <div id="audit-header" class="mb-4">
+    <div class="d-flex align-items-start gap-3">
+      <div class="flex-grow-1">
+        <h2 class="fw-bold mb-1" id="audit-title">—</h2>
+        <p class="text-muted mb-1" id="audit-desc">—</p>
+        <span class="badge fs-6" id="audit-status-badge">—</span>
+      </div>
+      <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-outline-info" id="run-btn" onclick="runAudit()">
+          <i class="fas fa-play me-1"></i>Re-run
+        </button>
+        <a class="btn btn-sm btn-outline-secondary" id="export-btn" href="#">
+          <i class="fas fa-download me-1"></i>Export JSON
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-state" class="text-center py-5">
+    <i class="fas fa-spinner fa-spin fa-2x text-info mb-3 d-block"></i>
+    <p class="text-muted">Loading audit results...</p>
+  </div>
+
+  <div id="results-section" style="display:none">
+    <div class="row g-3 mb-4" id="metric-summary-cards"></div>
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-transparent border-0 pt-3 pb-0"><h6 class="fw-semibold">Metrics by Category</h6></div>
+          <div class="card-body"><canvas id="metricsChart" height="220"></canvas></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-transparent border-0 pt-3 pb-0"><h6 class="fw-semibold">All Metrics</h6></div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead class="table-light"><tr><th>Metric</th><th>Category</th><th>Value</th></tr></thead>
+                <tbody id="metrics-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pending-state" style="display:none" class="text-center py-5">
+    <i class="fas fa-clock fa-2x text-warning mb-3 d-block"></i>
+    <p class="text-muted">Audit pending. Click Re-run to start.</p>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const auditId = {{ audit_id }};
+let auditData = null;
+
+function statusBadgeClass(s) {
+  return {completed:'bg-success',running:'bg-info text-dark',failed:'bg-danger',pending:'bg-secondary'}[s]||'bg-secondary';
+}
+
+async function loadAudit() {
+  const res = await fetch(`/api/audits/${auditId}`);
+  if (!res.ok) { document.getElementById('loading-state').innerHTML = '<p class="text-danger">Audit not found.</p>'; return; }
+  auditData = await res.json();
+
+  document.getElementById('breadcrumb-name').textContent = auditData.name;
+  document.getElementById('audit-title').textContent = auditData.name;
+  document.getElementById('audit-desc').textContent = auditData.description || (auditData.model_name ? `Model: ${auditData.model_name}` : '');
+  const badge = document.getElementById('audit-status-badge');
+  badge.textContent = auditData.status;
+  badge.className = `badge fs-6 ${statusBadgeClass(auditData.status)}`;
+  document.getElementById('export-btn').href = `/api/audits/${auditId}/export?format=json`;
+
+  document.getElementById('loading-state').style.display = 'none';
+  if (auditData.status === 'completed' && auditData.metrics.length > 0) {
+    renderResults(auditData.metrics);
+  } else if (auditData.status === 'pending') {
+    document.getElementById('pending-state').style.display = 'block';
+  } else if (auditData.status === 'running') {
+    document.getElementById('loading-state').style.display = 'block';
+    setTimeout(loadAudit, 3000);
+  } else {
+    document.getElementById('results-section').style.display = 'block';
+  }
+}
+
+function renderResults(metrics) {
+  document.getElementById('results-section').style.display = 'block';
+
+  // Summary cards
+  const categories = [...new Set(metrics.map(m => m.category))];
+  const cards = document.getElementById('metric-summary-cards');
+  const catColors = {fairness:'info', explainability:'primary', robustness:'success', other:'secondary'};
+  cards.innerHTML = categories.map(cat => {
+    const catMetrics = metrics.filter(m => m.category === cat);
+    const avg = (catMetrics.reduce((s, m) => s + m.value, 0) / catMetrics.length).toFixed(3);
+    const col = catColors[cat] || 'secondary';
+    return `<div class="col-md-4"><div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <div class="stat-icon bg-${col} bg-opacity-10 text-${col} rounded-3 p-3 me-3">
+            <i class="fas ${catIcon(cat)} fa-lg"></i>
+          </div>
+          <div>
+            <div class="fs-5 fw-bold">${avg}</div>
+            <div class="text-muted small text-capitalize">${cat} (avg)</div>
+          </div>
+        </div>
+      </div>
+    </div></div>`;
+  }).join('');
+
+  // Metrics table
+  document.getElementById('metrics-tbody').innerHTML = metrics.map(m => `
+    <tr>
+      <td class="fw-semibold small">${m.name}</td>
+      <td><span class="badge bg-${catColors[m.category]||'secondary'} bg-opacity-15 text-${catColors[m.category]||'secondary'} text-capitalize">${m.category}</span></td>
+      <td>${typeof m.value === 'number' ? m.value.toFixed(4) : m.value}</td>
+    </tr>`).join('');
+
+  // Chart
+  const grouped = {};
+  metrics.forEach(m => { if (!grouped[m.category]) grouped[m.category] = []; grouped[m.category].push(m.value); });
+  const labels = Object.keys(grouped);
+  const avgs = labels.map(l => grouped[l].reduce((a,b)=>a+b,0)/grouped[l].length);
+  new Chart(document.getElementById('metricsChart'), {
+    type: 'radar',
+    data: {
+      labels: labels.map(l => l.charAt(0).toUpperCase()+l.slice(1)),
+      datasets: [{ label: 'Average Score', data: avgs, backgroundColor: 'rgba(13,202,240,0.2)', borderColor: '#0dcaf0', pointBackgroundColor: '#0dcaf0' }]
+    },
+    options: { scales: { r: { beginAtZero: true, max: 1 } }, plugins: { legend: { display: false } } }
+  });
+}
+
+function catIcon(cat) {
+  return {fairness:'fa-balance-scale', explainability:'fa-lightbulb', robustness:'fa-shield-halved'}[cat]||'fa-chart-bar';
+}
+
+async function runAudit() {
+  const token = localStorage.getItem('token');
+  if (!token) { alert('Please login first'); return; }
+  document.getElementById('run-btn').disabled = true;
+  document.getElementById('run-btn').innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Running...';
+  const res = await fetch(`/api/audits/${auditId}/run`, { method:'POST', headers:{'Authorization':`Bearer ${token}`} });
+  if (res.ok) { loadAudit(); }
+  else { const e = await res.json(); alert(e.error); document.getElementById('run-btn').disabled = false; document.getElementById('run-btn').innerHTML = '<i class="fas fa-play me-1"></i>Re-run'; }
+}
+
+loadAudit();
+</script>
+{% endblock %}

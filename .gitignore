@@ -1,0 +1,48 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment secrets — NEVER COMMIT
+.env
+
+# Database & data files
+data/app.db
+data/models/
+data/*.csv
+data/*.json
+
+# Uploads
+*.joblib
+*.pkl
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Migrations (keep versions, ignore compiled)
+migrations/versions/*.pyc

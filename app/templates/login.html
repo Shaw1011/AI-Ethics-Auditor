@@ -1,0 +1,83 @@
+﻿{% extends "base.html" %}
+{% block title %}Login — AI Ethics Auditor{% endblock %}
+{% block content %}
+<div class="d-flex align-items-center justify-content-center" style="min-height:calc(100vh - 60px)">
+  <div class="card border-0 shadow-lg" style="width:100%;max-width:420px">
+    <div class="card-body p-4">
+      <div class="text-center mb-4">
+        <i class="fas fa-shield-halved fa-3x text-info mb-3"></i>
+        <h4 class="fw-bold">AI Ethics Auditor</h4>
+        <p class="text-muted small">Sign in to manage audits</p>
+      </div>
+
+      <div id="alert-box" class="alert d-none"></div>
+
+      <div id="login-form">
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="your_username"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')login()"/>
+        </div>
+        <button class="btn btn-info w-100 fw-semibold" onclick="login()">
+          <i class="fas fa-sign-in-alt me-2"></i>Sign In
+        </button>
+        <hr class="my-3"/>
+        <p class="text-center text-muted small mb-2">Don't have an account?</p>
+        <button class="btn btn-outline-secondary w-100 btn-sm" onclick="showRegister()">Create Account</button>
+      </div>
+
+      <div id="register-form" style="display:none">
+        <div class="mb-3"><label class="form-label small fw-semibold">Username</label><input type="text" class="form-control" id="r-username"/></div>
+        <div class="mb-3"><label class="form-label small fw-semibold">Email</label><input type="email" class="form-control" id="r-email"/></div>
+        <div class="mb-3"><label class="form-label small fw-semibold">Password</label><input type="password" class="form-control" id="r-password"/></div>
+        <button class="btn btn-info w-100 fw-semibold" onclick="register()"><i class="fas fa-user-plus me-2"></i>Register</button>
+        <hr class="my-3"/>
+        <button class="btn btn-link w-100 text-muted small" onclick="showLogin()">Back to Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+function showAlert(msg, type='danger') {
+  const box = document.getElementById('alert-box');
+  box.className = `alert alert-${type}`;
+  box.textContent = msg;
+}
+function showRegister() { document.getElementById('login-form').style.display='none'; document.getElementById('register-form').style.display='block'; }
+function showLogin() { document.getElementById('register-form').style.display='none'; document.getElementById('login-form').style.display='block'; }
+
+async function login() {
+  const body = { username: document.getElementById('username').value, password: document.getElementById('password').value };
+  if (!body.username || !body.password) { showAlert('Username and password required'); return; }
+  const res = await fetch('/api/auth/login', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  const data = await res.json();
+  if (res.ok) {
+    localStorage.setItem('token', data.token);
+    localStorage.setItem('username', data.username);
+    showAlert('Login successful! Redirecting...', 'success');
+    setTimeout(() => location.href = '/', 800);
+  } else { showAlert(data.error); }
+}
+
+async function register() {
+  const body = { username: document.getElementById('r-username').value, email: document.getElementById('r-email').value, password: document.getElementById('r-password').value };
+  if (!body.username || !body.email || !body.password) { showAlert('All fields required'); return; }
+  const res = await fetch('/api/auth/register', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  const data = await res.json();
+  if (res.ok) {
+    localStorage.setItem('token', data.token);
+    showAlert('Account created! Redirecting...', 'success');
+    setTimeout(() => location.href = '/', 800);
+  } else { showAlert(data.error); }
+}
+
+// Show logged-in state in navbar
+const savedUser = localStorage.getItem('username');
+if (savedUser) { document.querySelector('.nav-link[href="/login"]').innerHTML = `<i class="fas fa-user-check me-1 text-info"></i>${savedUser}`; }
+</script>
+{% endblock %}

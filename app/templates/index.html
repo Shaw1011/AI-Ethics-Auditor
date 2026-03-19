@@ -1,0 +1,114 @@
+﻿{% extends "base.html" %}
+{% block title %}Dashboard — AI Ethics Auditor{% endblock %}
+{% block content %}
+<div class="container-fluid py-4 px-4">
+  <div class="d-flex align-items-center mb-4">
+    <div>
+      <h2 class="fw-bold mb-0">Dashboard</h2>
+      <p class="text-muted mb-0">Overview of your AI ethics audits</p>
+    </div>
+    <a href="/audits" class="btn btn-info btn-sm ms-auto"><i class="fas fa-plus me-1"></i>New Audit</a>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <div class="card stat-card border-0 shadow-sm h-100">
+        <div class="card-body d-flex align-items-center">
+          <div class="stat-icon bg-info bg-opacity-10 text-info rounded-3 p-3 me-3"><i class="fas fa-brain fa-lg"></i></div>
+          <div><div class="fs-4 fw-bold" id="total-models">—</div><div class="text-muted small">Total Models</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card stat-card border-0 shadow-sm h-100">
+        <div class="card-body d-flex align-items-center">
+          <div class="stat-icon bg-success bg-opacity-10 text-success rounded-3 p-3 me-3"><i class="fas fa-check-circle fa-lg"></i></div>
+          <div><div class="fs-4 fw-bold" id="completed-audits">—</div><div class="text-muted small">Completed Audits</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card stat-card border-0 shadow-sm h-100">
+        <div class="card-body d-flex align-items-center">
+          <div class="stat-icon bg-warning bg-opacity-10 text-warning rounded-3 p-3 me-3"><i class="fas fa-exclamation-triangle fa-lg"></i></div>
+          <div><div class="fs-4 fw-bold" id="fairness-alerts">—</div><div class="text-muted small">Fairness Alerts</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card stat-card border-0 shadow-sm h-100">
+        <div class="card-body d-flex align-items-center">
+          <div class="stat-icon bg-primary bg-opacity-10 text-primary rounded-3 p-3 me-3"><i class="fas fa-shield-halved fa-lg"></i></div>
+          <div><div class="fs-4 fw-bold" id="total-audits">—</div><div class="text-muted small">Total Audits</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-transparent border-0 pt-3 pb-0"><h6 class="fw-semibold mb-0">Audit Status Distribution</h6></div>
+        <div class="card-body"><canvas id="statusChart" height="200"></canvas></div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-transparent border-0 pt-3 pb-0"><h6 class="fw-semibold mb-0">Recent Audits</h6></div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover mb-0">
+              <thead class="table-light"><tr><th>Name</th><th>Model</th><th>Status</th><th></th></tr></thead>
+              <tbody id="recent-audits-body"><tr><td colspan="4" class="text-center text-muted py-3">Loading...</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+async function loadDashboard() {
+  const [modelsRes, auditsRes] = await Promise.all([fetch('/api/models/'), fetch('/api/audits/')]);
+  const models = await modelsRes.json();
+  const audits = await auditsRes.json();
+
+  document.getElementById('total-models').textContent = models.length;
+  document.getElementById('total-audits').textContent = audits.length;
+  const completed = audits.filter(a => a.status === 'completed');
+  document.getElementById('completed-audits').textContent = completed.length;
+
+  // Fairness alerts: audits with metrics containing high disparity (placeholder count)
+  document.getElementById('fairness-alerts').textContent = audits.filter(a => a.status === 'completed' && a.metric_count > 0).length;
+
+  // Status chart
+  const statuses = {};
+  audits.forEach(a => { statuses[a.status] = (statuses[a.status] || 0) + 1; });
+  new Chart(document.getElementById('statusChart'), {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(statuses),
+      datasets: [{ data: Object.values(statuses), backgroundColor: ['#0dcaf0','#198754','#dc3545','#ffc107'], borderWidth: 0 }]
+    },
+    options: { plugins: { legend: { position: 'right' } }, cutout: '65%' }
+  });
+
+  // Recent audits table
+  const tbody = document.getElementById('recent-audits-body');
+  if (audits.length === 0) { tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted py-3">No audits yet</td></tr>'; return; }
+  tbody.innerHTML = audits.slice(0, 6).map(a => `
+    <tr>
+      <td class="fw-semibold">${a.name}</td>
+      <td class="text-muted small">${a.model_name || '—'}</td>
+      <td><span class="badge ${statusBadge(a.status)}">${a.status}</span></td>
+      <td><a href="/audits/${a.id}" class="btn btn-sm btn-outline-secondary py-0">View</a></td>
+    </tr>`).join('');
+}
+function statusBadge(s) {
+  return {completed:'bg-success', running:'bg-info', failed:'bg-danger', pending:'bg-secondary'}[s] || 'bg-secondary';
+}
+loadDashboard();
+</script>
+{% endblock %}
